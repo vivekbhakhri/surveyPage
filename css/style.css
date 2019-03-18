@@ -1,0 +1,95 @@
+body {
+  background-color: #a9d7d1;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  min-width: 320px;
+}
+#survey-form{
+  background-color: rgba(255,255,255, 0.6);
+  padding: 20px 20px 20px 20px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  top: 18px;
+  margin-left: 9px;
+  padding: 15px;
+  display: block;
+}
+
+#title {
+  background-color: #a9d7d1;
+  color: #FFFFFF;
+}
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+.left-side {
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  width: 40%;
+  padding: 15px;
+}
+.right-tab {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  width: 48%;
+  padding: 15px;
+}
+#form-outline {
+  box-shadow: 25px 20px 10px 10px #37474F;
+  padding: 14px;
+  background-color: white;
+  border: 1px solid black;
+}
+@media screen and (max-width: 1050px) {
+  .left-side {
+    width: 80%;
+    text-align: left;
+  }
+  .right-tab {
+    margin-left: 10px;
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  #select {
+    align-items: baseline;
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .left-side {
+    width: 80%;
+    text-align: left;
+  }
+  .right-tab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}

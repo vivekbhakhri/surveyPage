@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>survey page</title>
+
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<h1 id="title">Student Survey Form </h1>
+
+<div id ="form-outline">
+  <p id="description"> <strong>To get up to date with students</strong></p>
+
+  <form id="survey-form">
+
+    <div class = "left-side">
+      <label id="name-label" for="name">*Name: </label>
+    </div>
+
+    <div class="right-tab">
+      <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+    </div>
+
+    <div class ="left-side">
+      <label id ="email-label" for="email">*Email: </label>
+    </div>
+
+    <div class="right-tab">
+      <input autofocus type="email" email="email" id="email" class="input-field" placeholder="Enter your email" required>
+    </div>
+
+    <div class="left-side">
+      <label id="number-label" for="number">What rating you give to current educational system: </label>
+    </div>
+
+    <div class= "right-tab">
+      <input autofocus type="number" number="number" id="number" class="input-field" min="1" max="10" placeholder="rate">
+    </div>
+
+    <div class="left-side">
+      <label>Which subject you think needs to get renewed: </label>
+    </div>
+
+    <div id="dropdown" class= "right-tab">
+      <select>
+        <option disabled selected value>Select an option</option>
+        <option value="student">Physics</option>
+        <option value="developer">Mathamatics</option>
+        <option value="teacher">Chemistry</option>
+        <option value="prefer not to say">Accounts</option>
+        <option value="other">Econamics</option>
+      </select>
+    </div>
+
+    <div for="reformes" class="left-side">
+      <lable>Which department you think our Education system lacks the most<br>Check all that apply:</label>
+    </div>
+
+    <div id="reformes" class="right-tab">
+      <ul style="list-style: none;">
+        <input class= "checkbox" value="1" type="checkbox" name="education">computers
+        <input class= "checkbox" value="2" type="checkbox" name="education">friendly teachers
+        <input class= "checkbox" value="3" type="checkbox" name="education">upto date educational reforms
+        <input class= "checkbox" value="4" type="checkbox" name="education" >updated Books
+        <input class= "checkbox" value="5" type="checkbox" name="education" >other
+      </ul>
+    </div>
+
+    <div for ="preference" class="left-side">
+      <lable>Which study sytle you think suits you the most: </lable>
+    </div>
+
+    <div id="preference" class= "right-tab">
+      <ul>
+        <input class= "radio" value="1" id="indoor" type="radio" name="indoor-outdoor">indoor
+        <input class= "radio" value="2" id="outdoor" type="radio" name="indoor-outdoor">outdoor
+        <input class= "radio" value="3" id="library" type="radio" name="indoor-outdoor">library
+      </ul>
+    </div>
+
+    <div>
+      <div for="comments" class="left-side">
+        <label>If you have more suggestions feel free to provide: </label>
+      </div>
+
+      <div id="textarea" class="right-tab" id="comments">
+        <textarea class="input-field" rows="4" cols="50">can be left empty</textarea>
+      </div>
+    </div>
+
+    <div>
+      <button id ="submit" type="submit">submit</button>
+    </div>
+
+  </form>
+</div>
+
+
+
+</body>
+
+</html>
