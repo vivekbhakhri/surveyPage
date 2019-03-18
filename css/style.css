@@ -78,6 +78,9 @@ body {
 }
 
 @media (max-width: 520px) {
+  body {
+    margin: 0px;
+  }
   .left-side {
     width: 80%;
     text-align: left;
